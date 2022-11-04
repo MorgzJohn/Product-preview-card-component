@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap");
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: #f3eae3;
+        font-family: "Montserrat", sans-serif;
+      }
+      .container {
+        margin: 8% 30%;
+        height: 80%;
+        width: 40%;
+        background: white;
+        display: flex;
+        border-radius: 10px;
+      }
+      img {
+        border-radius: 10px;
+        width: 50%;
+        display: inline;
+      }
+      h1 {
+        font-family: "Fraunces", serif;
+      }
+
+      #numbr{
+        display: inline;
+        color: #3d8168;
+      }
+    .right-card{
+      padding: 30px;
+    }
+    #strike-txt{
+      color: #bbbcca;
+      text-decoration: line-through;
+    }
+    button{
+      border-radius: 10px;
+      margin-top: 15%;
+      width: 100%;
+      padding:5% 20%;
+      border: none;
+      background: none #3d8168;
+      color: white;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/image-product-desktop.jpg" alt="" />
+      <div class="right-card">
+        PERFUME
+
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+      <p>  A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.</p>
+        <h1 id="numbr">$149.99</h1> <span id="strike-txt" >$169.99</span> 
+        <button>Add to Cart</button> 
+      </div>
+    </div>
+  </body>
+</html>
